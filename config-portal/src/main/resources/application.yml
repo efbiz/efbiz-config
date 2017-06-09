@@ -1,0 +1,25 @@
+apollo_profile: github
+spring:
+  application:
+    name: config-portal
+  profiles:
+    active: ${apollo_profile}
+  datasource:
+    url: jdbc:mysql://localhost:3306/ApolloPortalDB?characterEncoding=utf8
+    username: root
+    password: 123456     
+server:
+  port: 8070
+  
+dev_meta: http://localhost:8888/  
+logging:
+  file: /opt/log/100003173/config-portal.log
+endpoints:
+  health:
+    sensitive: false
+management:
+  security:
+    enabled: false
+  health:
+    status:
+      order: DOWN, OUT_OF_SERVICE, UNKNOWN, UP 

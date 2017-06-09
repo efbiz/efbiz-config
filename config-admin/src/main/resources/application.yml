@@ -1,0 +1,16 @@
+apollo_profile: github
+spring:
+  application:
+    name: config-admin
+  profiles:
+    active: ${apollo_profile}
+  datasource:
+    url: jdbc:mysql://localhost:3306/ApolloConfigDB?characterEncoding=utf8
+    username: root
+    password: 123456    
+ctrip:
+  appid: 100003172
+server:
+  port: 8090
+logging:
+  file: /opt/log/100003172/config-admin.log

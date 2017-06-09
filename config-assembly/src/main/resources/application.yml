@@ -1,0 +1,11 @@
+spring:
+  profiles:
+    active: ${apollo_profile}
+
+logging:
+  level:
+    org.springframework.cloud: 'DEBUG'
+  file: /opt/log/100003171/config-assembly.log
+
+
+
