@@ -1,5 +1,5 @@
 #!/bin/bash
-SERVICE_NAME=apollo-portal
+SERVICE_NAME=config-portal
 
 if [[ -z "$JAVA_HOME" && -d /usr/java/latest/ ]]; then
     export JAVA_HOME=/usr/java/latest/

@@ -32,7 +32,7 @@ public class ApolloApplication {
     /**
      * ConfigService
      */
-    if (commonContext.getEnvironment().containsProperty("configservice")) {
+    if (commonContext.getEnvironment().containsProperty("config-service")) {
       ConfigurableApplicationContext configContext =
           new SpringApplicationBuilder(ConfigServiceApplication.class).parent(commonContext)
               .sources(RefreshScope.class).run(args);
@@ -42,7 +42,7 @@ public class ApolloApplication {
     /**
      * AdminService
      */
-    if (commonContext.getEnvironment().containsProperty("adminservice")) {
+    if (commonContext.getEnvironment().containsProperty("config-admin")) {
       ConfigurableApplicationContext adminContext =
           new SpringApplicationBuilder(ConfigAdminApplication.class).parent(commonContext)
               .sources(RefreshScope.class).run(args);
@@ -52,7 +52,7 @@ public class ApolloApplication {
     /**
      * Portal
      */
-    if (commonContext.getEnvironment().containsProperty("portal")) {
+    if (commonContext.getEnvironment().containsProperty("config-portal")) {
       ConfigurableApplicationContext portalContext =
           new SpringApplicationBuilder(PortalApplication.class).parent(commonContext)
               .sources(RefreshScope.class).run(args);
