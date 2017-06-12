@@ -3,7 +3,7 @@ SERVICE_NAME=config-portal
 ## Adjust log dir if necessary
 LOG_DIR=/opt/log/100003173
 ## Adjust server port if necessary
-SERVER_PORT=8888
+SERVER_PORT=8070
 
 ## Adjust memory settings if necessary
 export JAVA_OPTS="-server -Xms128m -Xmx128m -Xss256k -XX:MetaspaceSize=128m -XX:MaxMetaspaceSize=384m -XX:NewSize=128m -XX:MaxNewSize=128m -XX:SurvivorRatio=22"

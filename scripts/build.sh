@@ -1,20 +1,20 @@
 #!/bin/sh
 
 # apollo config db info
-apollo_config_db_url=jdbc:mysql://localhost:3306/ApolloConfigDB?characterEncoding=utf8
-apollo_config_db_username=root
-apollo_config_db_password=123456
+apollo_config_db_url=jdbc:mysql://rds0ody743j45rhlm2pb.mysql.rds.aliyuncs.com:3306/efbizconfig?characterEncoding=utf8
+apollo_config_db_username=config
+apollo_config_db_password=configAdmin520
 
 # apollo portal db info
-apollo_portal_db_url=jdbc:mysql://localhost:3306/ApolloPortalDB?characterEncoding=utf8
-apollo_portal_db_username=root
-apollo_portal_db_password=123456
+apollo_portal_db_url=jdbc:mysql://rds0ody743j45rhlm2pb.mysql.rds.aliyuncs.com:3306/efbizconfigportal?characterEncoding=utf8
+apollo_portal_db_username=config
+apollo_portal_db_password=configAdmin520
 
 # meta server url
-dev_meta=http://localhost:8080
-fat_meta=http://localhost:8080
-uat_meta=http://localhost:8080
-pro_meta=http://localhost:8080
+dev_meta=http://localhost:8888
+fat_meta=http://localhost:8888
+uat_meta=http://localhost:8888
+pro_meta=http://localhost:8888
 
 META_SERVERS_OPTS="-Ddev_meta=$dev_meta -Dfat_meta=$fat_meta -Duat_meta=$uat_meta -Dpro_meta=$pro_meta"
 
